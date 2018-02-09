@@ -1,0 +1,3 @@
+# ./solution.sh
+
+echo HELLO
