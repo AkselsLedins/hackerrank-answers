@@ -4,8 +4,8 @@
   Node is defined as
   struct Node
   {
-     int data;
-     struct Node *next;
+    int data;
+    struct Node *next;
   }
 */
 int GetNode(Node *head,int positionFromTail)
@@ -17,9 +17,9 @@ int GetNode(Node *head,int positionFromTail)
   while (head->next) {
     // we create a gap of positionFromTail between the two pointers
     if (i < positionFromTail) {
-      i += 1;
+    i += 1;
     } else {
-      result = result->next;
+    result = result->next;
     }
 
     head = head->next;

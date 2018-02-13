@@ -1,11 +1,11 @@
 /*
-   Find merge point of two linked lists
-   Node is defined as
-   struct Node
-   {
-       int data;
-       Node* next;
-   }
+    Find merge point of two linked lists
+    Node is defined as
+    struct Node
+    {
+        int data;
+        Node* next;
+    }
 */
 
 int FindMergeNode(Node *headA, Node *headB) {
@@ -15,15 +15,15 @@ int FindMergeNode(Node *headA, Node *headB) {
   // at some point the pointers will collide
   while (a != b) {
     if (!a->next) {
-      a = headB;
+    a = headB;
     } else {
-      a = a->next;
+    a = a->next;
     }
 
     if (!b->next) {
-      b = headA;
+    b = headA;
     } else {
-      b = b->next;
+    b = b->next;
     }
   }
   return a->data;

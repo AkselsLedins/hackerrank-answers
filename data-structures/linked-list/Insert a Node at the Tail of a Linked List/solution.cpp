@@ -4,8 +4,8 @@
   Node is defined as
   struct Node
   {
-     int data;
-     struct Node *next;
+    int data;
+    struct Node *next;
   }
 */
 Node* Insert(Node *head,int data)
@@ -26,6 +26,6 @@ Node* Insert(Node *head,int data)
 
   // insert
   head->next = item;
-  
+
   return savedHead;
 }

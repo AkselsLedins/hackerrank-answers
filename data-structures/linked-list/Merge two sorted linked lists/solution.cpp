@@ -3,8 +3,8 @@
   Node is defined as
   struct Node
   {
-     int data;
-     struct Node *next;
+    int data;
+    struct Node *next;
   }
 */
 

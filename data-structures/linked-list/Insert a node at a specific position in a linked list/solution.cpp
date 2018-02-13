@@ -4,8 +4,8 @@
   Node is defined as
   struct Node
   {
-     int data;
-     struct Node *next;
+    int data;
+    struct Node *next;
   }
 */
 Node* InsertNth(Node *head, int data, int position)
@@ -16,13 +16,13 @@ Node* InsertNth(Node *head, int data, int position)
   item->next = NULL;
 
   if (!head || position == 0) {
-      item->next = head;
-      return item;
+    item->next = head;
+    return item;
   }
 
   Node *ptr = head;
   for (int currentPosition = 1; ptr->next && currentPosition < position; ++currentPosition) {
-      ptr = ptr->next;
+    ptr = ptr->next;
   }
 
   Node *nextNode = ptr->next;
